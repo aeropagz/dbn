@@ -33,3 +33,6 @@ def generate_iban():
     country_code = random.choices(string.ascii_uppercase, k=2)
     iban = country_code + random.choices(string.digits, k=20)
     return "".join(iban)
+
+def generate_playlist(username: str):
+    return username + "'s playlist"
